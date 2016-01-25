@@ -1,11 +1,124 @@
 ---
-title: Page Title
+title: Oaxaca Boda
 ---
 
-.delete-me
-  .container
-    %h1 thoughtbot Middleman Starter
-    %p
-      You're all set!
-      <a href="http://github.com/thoughtbot/proteus-middleman">Let's get started</a>
-      building your prototype.
+%header#header.centered-navigation{role: "banner"}
+  .centered-navigation-wrapper.scroll-on-page
+    %a.mobile-logo{href: "javascript:void(0)"}
+      %img{alt: "Logo image", src: "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png"}/
+    %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: "javascript:void(0)"} MENU
+    %nav.scroll-on-page-top{role: "navigation"}
+      %ul#js-centered-navigation-menu.centered-navigation-menu.show
+        %li.nav-link= link_to 'Nuestra Historia', '#slider', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'La Boda', '#wedding', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Oaxaca', '#oaxaca', class: 'scroll-on-page-link'
+        %li.nav-link.logo=link_to image_tag('logo.svg'), '#slider', alt: 'Boda Cata & Ale', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Contacto', '#contact', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'RSVP', '#rsvp', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Regalo', '#gift', class: 'scroll-on-page-link'
+
+%section#slider
+  %div= image_tag 'slider/slider1.jpg'
+  %div= image_tag 'slider/slider2.jpg'
+
+%section#wedding
+  %h1 La Boda
+  %ul.accordion-tabs-minimal
+    %li.tab-header-and-content
+      =link_to 'jueves', '#', class: 'tab-link is-active'
+      .tab-content
+        .grid-items-lines
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Grid Item
+            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Another Item
+            %p Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Another Grid Item
+            %p Lorem ipsum dolor sit amet, elit.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Grid Item
+            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+          .grid-item.grid-item-big
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Wider Grid Item
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 A Grid Item
+            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Item
+            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 Last Grid Item
+            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+          .right-cover
+          .bottom-cover
+    %li.tab-header-and-content
+      =link_to 'Viernes', '#', class: 'tab-link'
+      .tab-content
+        %p Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.
+    %li.tab-header-and-content
+      =link_to 'Sábado', '#', class: 'tab-link'
+      .tab-content
+        %p Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.
+    %li.tab-header-and-content
+      =link_to 'Domingo', '#', class: 'tab-link'
+      .tab-content
+        %p Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.
+
+%section#oaxaca
+  %h1 Oaxaca
+  %h2
+    Para todo mal, Mexcal... <br>... para todo bien, también.
+  .row
+    .box
+      .box-content.bg-red
+        %h3 Qué tomar y comer
+        %ul
+          %li Sociis natoque penatibus et magnis dis parturient montes
+          %li Nulla faucibus, purus eu placerat fermentum
+          %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
+          %li Nullam fringilla, enim eu lobortis dapibus
+      = image_tag 'oaxaca/3.jpg'
+    .box
+      = image_tag 'oaxaca/1.jpg'
+      .box-content.bg-orange
+        %h3 Qué hacer
+        %ul
+          %li Sociis natoque penatibus et magnis dis parturient montes
+          %li Nulla faucibus, purus eu placerat fermentum
+          %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
+          %li Nullam fringilla, enim eu lobortis dapibus
+    .box
+      .box-content.bg-yellow
+        %h3 Dónde dormir
+        %ul
+          %li Sociis natoque penatibus et magnis dis parturient montes
+          %li Nulla faucibus, purus eu placerat fermentum
+          %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
+          %li Nullam fringilla, enim eu lobortis dapibus
+      = image_tag 'oaxaca/2.jpg'
+    .box
+      = image_tag 'oaxaca/4.jpg'
+      .box-content.bg-green
+        %h3 Cómo llegar
+        %ul
+          %li Sociis natoque penatibus et magnis dis parturient montes
+          %li Nulla faucibus, purus eu placerat fermentum
+          %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
+          %li Nullam fringilla, enim eu lobortis dapibus
+%section#contact
+  %h1 Contacto
+%section#rsvp
+  %h1 RSVP
+%section#gift
+  %h1 Regalo
