@@ -9,13 +9,13 @@ title: Oaxaca Boda
     %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: "javascript:void(0)"} MENU
     %nav.scroll-on-page-top{role: "navigation"}
       %ul#js-centered-navigation-menu.centered-navigation-menu.show
-        %li.nav-link= link_to 'Nuestra Historia', '#slider', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Nosotros', '#slider', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'La Boda', '#wedding', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'Oaxaca', '#oaxaca', class: 'scroll-on-page-link'
         %li.nav-link.logo=link_to image_tag('logo.svg'), '#slider', alt: 'Boda Cata & Ale', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'Contacto', '#contact', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'El Regalo', '#gift', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'RSVP', '#rsvp', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'Regalo', '#gift', class: 'scroll-on-page-link'
 
 %section#slider
   %div= image_tag 'slider/slider1.jpg'
@@ -75,7 +75,7 @@ title: Oaxaca Boda
       .tab-content
         %p Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.
 
-%section#oaxaca
+%section#oaxaca.bg-purple
   %h1 Oaxaca
   %h2
     Para todo mal, Mexcal... <br>... para todo bien, también.
@@ -88,9 +88,13 @@ title: Oaxaca Boda
           %li Nulla faucibus, purus eu placerat fermentum
           %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
           %li Nullam fringilla, enim eu lobortis dapibus
-      = image_tag 'oaxaca/3.jpg'
+      #slider1
+        %div= image_tag 'oaxaca/3.jpg'
+        %div= image_tag 'oaxaca/5.jpg'
     .box
-      = image_tag 'oaxaca/1.jpg'
+      #slider2
+        %div= image_tag 'oaxaca/1.jpg'
+        %div= image_tag 'oaxaca/7.jpg'
       .box-content.bg-orange
         %h3 Qué hacer
         %ul
@@ -106,9 +110,13 @@ title: Oaxaca Boda
           %li Nulla faucibus, purus eu placerat fermentum
           %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
           %li Nullam fringilla, enim eu lobortis dapibus
-      = image_tag 'oaxaca/2.jpg'
+      #slider3
+        %div= image_tag 'oaxaca/2.jpg'
+        %div= image_tag 'oaxaca/8.jpg'
     .box
-      = image_tag 'oaxaca/4.jpg'
+      #slider4
+        %div= image_tag 'oaxaca/4.jpg'
+        %div= image_tag 'oaxaca/6.jpg'
       .box-content.bg-green
         %h3 Cómo llegar
         %ul
@@ -116,9 +124,9 @@ title: Oaxaca Boda
           %li Nulla faucibus, purus eu placerat fermentum
           %li Ut laoreet augue et neque pretium non sagittis nibh pulvinar
           %li Nullam fringilla, enim eu lobortis dapibus
-%section#contact
+%section#contact.bg-light-gray
   %h1 Contacto
-%section#rsvp
+%section#gift.bg-orange
+  %h1 El Regalo
+%section#rsvp.bg-burgundy
   %h1 RSVP
-%section#gift
-  %h1 Regalo

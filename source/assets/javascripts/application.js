@@ -21,6 +21,14 @@ $(document).ready(function() {
     arrows: false,
     fade: true
   });
+  $('#slider1, #slider2, #slider3, #slider4').slick({
+    dots: true,
+    infinite: true,
+    autoplay: true,
+    arrows: false,
+    fade: true,
+    autoplaySpeed: 6000
+  });
 
   $('.accordion-tabs-minimal').each(function(index) {
     $(this).children('li').first().children('a').addClass('is-active').next().addClass('is-open').show();

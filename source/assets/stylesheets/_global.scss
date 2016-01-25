@@ -446,12 +446,11 @@
 
 }
 #oaxaca{
-  background-color: $purple;
-  padding:100px 0px 0px 0px;
+  padding:120px 0px 0px 0px;
   color:#fff!important;
 
   .row{
-    overflow: hidden; margin-top: 60px;
+    overflow: hidden; margin-top: 80px;
     .box{
       width:50%;
       float:left;
@@ -462,6 +461,20 @@
       }
     }
   }
+}
+#contact{
+  padding:100px 60px 60px 60px;
+}
+#rsvp{
+  padding:100px 60px 60px 60px;
+  color:#fff;
+
+}
+#gift{
+  padding:100px 60px 60px 60px;
+  color:#fff;
+  //background-image: url(../images/bg/1.jpg);
+  //background-position: fixed;
 }
 #contact, #rsvp, #gift{min-height: 600px;}
 
