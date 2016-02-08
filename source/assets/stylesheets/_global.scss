@@ -447,18 +447,77 @@
 }
 #oaxaca{
   padding:120px 0px 0px 0px;
-  color:#fff!important;
+  color:#fff;
 
   .row{
     overflow: hidden; margin-top: 80px;
     .box{
       width:50%;
       float:left;
+      @media screen and (max-width: 768px) {
+       width:100%;
+     }
       img{display: block; margin: 0!important; padding:0!important}
       .box-content{
         padding: 60px 20px;
         text-align: center;
       }
+    }
+    a.btn{border:1px solid #fff; padding: 5px 20px; color:#fff;
+      &:hover{background-color: #fff; color:$purple; cursor: pointer;}
+    }
+    dl{
+      text-align: center; font-size: 18px; overflow: hidden;
+      dt{text-transform: uppercase;
+        span{display: block; font-size: 13px; font-weight: 300;}
+      }
+      dd{color: rgba($dark-gray, .5); font-size: 15px; font-weight: 300;
+        &:after{content: "•"; display: block;}
+      }
+    }
+    .restaurantes{
+      dd:after{color:$red}
+      border-bottom:  1px dashed $red;
+    }
+    .bares{
+      dd:after{color:$orange}
+      border-bottom:  1px dashed $orange;
+    }
+    .paseos{
+      dd:after{color:$yellow}
+      border-bottom:  1px dashed $yellow;
+    }
+    .arte{
+      dd:after{color:$orange}
+      border-bottom:  1px dashed $orange;
+    }
+    .artesanias{
+      dd:after{color:$red}
+      border-bottom:  1px dashed $red;
+    }
+    .recorridos{
+      dd:after{color:$burgundy}
+      border-bottom:  1px dashed $burgundy;
+    }
+    .salones{
+      dd:after{color:$burgundy}
+      border-bottom:  1px dashed $burgundy;
+    }
+    .taxis{
+      dd:after{color:$red}
+      border-bottom:  1px dashed $red;
+    }
+    .aeropuerto{
+      dd:after{color:$orange}
+      border-bottom:  1px dashed $orange;
+    }
+    .emergencia{
+      dd:after{color:$yellow}
+      border-bottom:  1px dashed $yellow;
+    }
+    .info{
+      dd:after{color:$green}
+      border-bottom:  1px dashed $green;
     }
   }
 }
@@ -477,4 +536,162 @@
   //background-position: fixed;
 }
 #contact, #rsvp, #gift{min-height: 600px;}
+
+//modal
+.modal {
+  $base-border-color: #dcdcdc !default;
+  $base-border-radius: 3px !default;
+  $base-background-color: #fff !default;
+  $base-font-size: 1em !default;
+  $base-line-height: 1.5em !default;
+  $medium-screen: em(640) !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $modal-padding: 3em;
+  $modal-background: $base-background-color;
+  $modal-close-color: darken($light-gray, 15%);
+  $modal-image-height: 135px;
+  $modal-image-width: $modal-image-height;
+  $modal-trigger-image-width: 300px;
+
+  .modal-state {
+    display: none;
+  }
+
+  .modal-fade-screen { // overlay
+    @include transition(opacity 0.25s ease);
+    @include position(fixed, 0);
+    background-color: rgba(#fff, 1);
+    opacity: 0;
+    padding-top: 0.6em;
+    text-align: left;
+    visibility: hidden;
+    z-index: 99999999999;
+
+    @include media($large-screen) {
+      padding-top: 4em;
+    }
+
+    .modal-bg {
+      @include position(absolute, 0);
+      cursor: pointer;
+    }
+  }
+
+  .modal-close {
+    @include position(fixed, 40px 40px 0 right);
+    @include size(2.5em);
+    background: $modal-background;
+    cursor: pointer;
+
+    &:after,
+    &:before {
+      @include position(absolute, 0px 30px 0 50%);
+      @include transform(rotate(45deg));
+      @include size(0.1em 2.5em);
+      background: $modal-close-color;
+      content: '';
+      display: block;
+      margin: 0px 0 0 0px;
+    }
+
+    &:hover:after,
+    &:hover:before {
+      background: darken($modal-close-color, 20%);
+    }
+
+    &:before {
+      @include transform(rotate(-45deg));
+    }
+  }
+  .modal-close-btn{
+    background-color: $purple; padding: 7px 20px; color:#fff; display: inline-block; font-weight: 300;
+    left: 50%; transform: translate(-50%, 0%); position: absolute;
+    &:hover{
+      cursor: pointer;
+      background-color: lighten($purple, 10%);
+    }
+  }
+
+  .modal-inner {
+    @include transition(opacity 0.25s ease);
+    background: $modal-background;
+    border-radius: $base-border-radius;
+    margin-top: 0;
+    margin: auto;
+    max-height: 100%;
+    overflow: auto;
+    padding: $modal-padding / 2;
+    position: relative;
+    width: 100%;
+    color:$dark-gray;
+
+    .modal-title{
+      position: fixed;
+      width: 100%;
+      top:0px; left:50%; transform: translate(-50%, 0%);
+      text-align: center; font-size: 50px; line-height: 50px; font-weight: 300;
+      padding: 40px 0;  background-color: #fff;
+      box-shadow: 1px 1px 1px lighten($light-gray, 5%);
+    }
+
+
+    @include media($medium-screen) {
+      max-height: 100%;
+      padding: $modal-padding;
+      width: 100%;
+    }
+
+    @include media($large-screen) {
+      width: 100%;
+    }
+
+
+    h1 {
+      color: $base-font-color;
+      text-transform: capitalize;
+      font-size: 40px;
+    }
+
+    p {
+      color: $base-font-color;
+      line-height: $base-line-height;
+      text-align: center;
+      font-weight: 300;
+    }
+
+    .modal-intro {
+      margin-bottom: 1em;
+    }
+
+    .modal-content {
+      color:#333;
+    }
+
+    a.cta {
+      color: $base-background-color;
+      display: inline-block;
+      margin-right: 0.5em;
+      margin-top: 1em;
+
+      &:last-child {
+        padding: 0 2em;
+      }
+    }
+  }
+
+  .modal-state:checked + .modal-fade-screen {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .modal-state:checked + .modal-fade-screen .modal-inner {
+    top: 0.5em;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
 
