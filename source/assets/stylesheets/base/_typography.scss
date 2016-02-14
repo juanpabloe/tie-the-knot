@@ -22,7 +22,9 @@ h1{font-size: 60px; font-weight:100; text-transform: uppercase; text-align: cent
 h2{font-size: 30px; font-weight:100; text-align: center; line-height: 30px; letter-spacing: 1px;}
 h3{font-size: 30px; font-weight:300; text-transform: uppercase; text-align: center; line-height: 30px; letter-spacing: 1px;}
 
-
+@media screen and (max-width: 768px) {
+h1{font-size: 40px; font-weight:100; text-transform: uppercase; text-align: center; line-height: 40px; letter-spacing: 2px;}
+ }
 p {
   margin: 0 0 $small-spacing;
   font-weight: 100;

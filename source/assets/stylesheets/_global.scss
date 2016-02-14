@@ -519,6 +519,12 @@
       dd:after{color:$green}
       border-bottom:  1px dashed $green;
     }
+    .hoteles{
+      dd:after{color:$pink; padding-top: 20px;}
+      b{font-size: 12px;}
+      border-bottom:  1px dashed $pink;
+      span a{color:$medium-gray; border-bottom: 1px solid $light-gray; padding-bottom: 2px; margin-bottom: 15px; display: inline-block;}
+    }
   }
 }
 #contact{
