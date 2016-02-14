@@ -589,6 +589,10 @@
     @include size(2.5em);
     background: $modal-background;
     cursor: pointer;
+    @media screen and (max-width: 600px) {
+      @include position(fixed, 20px 20px 0 right);
+      @include size(1.25em);
+    }
 
     &:after,
     &:before {
@@ -599,6 +603,10 @@
       content: '';
       display: block;
       margin: 0px 0 0 0px;
+      @media screen and (max-width: 600px) {
+      @include position(absolute, 0px 15px 0 50%);
+      @include size(0.1em 1.25em);
+      }
     }
 
     &:hover:after,
@@ -639,6 +647,10 @@
       text-align: center; font-size: 50px; line-height: 50px; font-weight: 300;
       padding: 40px 0;  background-color: #fff;
       box-shadow: 1px 1px 1px lighten($light-gray, 5%);
+      @media screen and (max-width: 600px) {
+        padding: 50px 0 10px 0;
+        font-size: 30px; line-height: 30px; font-weight: 300;
+      }
     }
 
 
@@ -656,7 +668,7 @@
     h1 {
       color: $base-font-color;
       text-transform: capitalize;
-      font-size: 40px;
+      font-size: 30px;
     }
 
     p {
