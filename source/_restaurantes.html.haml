@@ -1,102 +1,172 @@
-%input#modal-1.modal-state{:type => "checkbox"}
-  .modal-fade-screen
-    .modal-inner
-      .modal-close{:for => "modal-1"}
-      %h1 RESTAURANTES
-      %dl
-        %dt
-          CATEDRAL
-          %span
-            Cocina Típica Regional
-        %dd
-          García Vigil 105 - Tel. (951) 516-3285
-        %dt
-          LA CASA DE LA ABUELA
-          %span
-            Cocina Típica Regional
-        %dd
-          Hidalgo  616 - Tel. (951) 516-3544
-        %dt
-          LOS PACOS
-          %span
-            Cocina Típica Regional
-        %dd
-          Constitución 104 - Tel. (951) 515-3523
-        %dt
-          LOS DANZANTES
-          %span
-            Cocina Mexicana.
-        %dd
-          Macedonio Alcalá  403-3 - Tel. (951) 520-0215
-        %dt
-          EL REFECTORIO
-          %span
-            Cocina Regional e Internacional
-        %dd
-          5 de Mayo 300 - Hotel Camino Real - Tel. (951) 51 6-0611
-        %dt
-          EL ASADOR VASCO
-          %span
-            Cocina española y Oaxaqueña
-        %dd
-          Portal de las Flores 10-A - Tel. (951) 51 6-4747
-        %dt
-          LA TOSCANA
-          %span
-            Cocina Italiana
-        %dd
-          Calle 5 de Mayo 614 - Barrio de Jalatlaco - Tel. (951) 516-4747
-        %dt
-          FONDA LA ABUELITA
-          %span
-            El mejor lugar para desayunar
-        %dd
-          Mercado 20 de Noviembre - Tel. (951) 516-27-91
-        %dt
-          CASA OAXACA EL RESTAURANTE
-          %span
-            Cocina auténtica Oaxaqueña
-        %dd
-          Constitución 104. Centro - Tel. (951) 51 6-88-89
-        %dt
-          LA PITIONA
-          %span
-            Sabor de Oaxaca
-        %dd
-          Allende 108 Col. Centro. - Tel. (951) 514 0690
-        %dt
-          LA BIZNAGA
-          %span
-            Cocina mestiza
-        %dd
-          Garcia Vigil 512, Centro    Tel. (951) 516 1800
-        %dt
-          LOS CHAVALES
-          %span
-            Carnes al Grill Argentino
-        %dd
-          Netzahualcóyotl 300 esq. Eucaliptos, Reforma - Tel. (951) 513 0688 - (951) 503 8673
-        %dt
-          El CHE GAUCHO
-          %span
-            Restaurant Argentino
-        %dd
-          Las Rosas 700 esq. Álamos, Reforma. - Tel. (951) 514 2122 - (951) 518 5532
-        %dt
-          LA TECA
-          %span
-            Sabor Mexicano
-        %dd
-          Violetas 200, Reforma - Tel. (951) 515 0563
-        %dt
-          ZANDUNGA
-          %span
-            Comida Oaxaqueña
-        %dd
-          Garcia Vigil 105 esq. Carranza, Centro Histórico - Jesús Tel. (951) 516 2265
-        %dt
-          CASA OAXACA EL CAFÉ
-          %span
-            Desayuno fresco y aromático
-        %dd
-          Jazmines 518, Col. Reforma - Tel. (951) 502 6017
+.m-t-md
+  .modal
+    %label{:for => "restaurantes"}
+      .modal-trigger
+        %a.btn Guía de bares y restaurantes
+    %input#restaurantes.modal-state{:type => "checkbox"}
+      .modal-fade-screen
+        .modal-inner
+          .modal-title.c_purple QUÉ TOMAR Y COMER
+          .modal-close{:for => "restaurantes"}
+          .restaurantes.p-b-xl
+            %h1.text-center.m-t-lg.c_red RESTAURANTES
+            %dl
+              %dt
+                CATEDRAL
+                %span
+                  Cocina Típica Regional
+              %dd
+                García Vigil 105 - Tel. (951) 516-3285
+              %dt
+                LA CASA DE LA ABUELA
+                %span
+                  Cocina Típica Regional
+              %dd
+                Hidalgo  616 - Tel. (951) 516-3544
+              %dt
+                LOS PACOS
+                %span
+                  Cocina Típica Regional
+              %dd
+                Constitución 104 - Tel. (951) 515-3523
+              %dt
+                LOS DANZANTES
+                %span
+                  Cocina Mexicana.
+              %dd
+                Macedonio Alcalá  403-3 - Tel. (951) 520-0215
+              %dt
+                EL REFECTORIO
+                %span
+                  Cocina Regional e Internacional
+              %dd
+                5 de Mayo 300 - Hotel Camino Real - Tel. (951) 51 6-0611
+              %dt
+                EL ASADOR VASCO
+                %span
+                  Cocina española y Oaxaqueña
+              %dd
+                Portal de las Flores 10-A - Tel. (951) 51 6-4747
+              %dt
+                LA TOSCANA
+                %span
+                  Cocina Italiana
+              %dd
+                Calle 5 de Mayo 614 - Barrio de Jalatlaco - Tel. (951) 516-4747
+              %dt
+                FONDA LA ABUELITA
+                %span
+                  El mejor lugar para desayunar
+              %dd
+                Mercado 20 de Noviembre - Tel. (951) 516-27-91
+              %dt
+                CASA OAXACA EL RESTAURANTE
+                %span
+                  Cocina auténtica Oaxaqueña
+              %dd
+                Constitución 104. Centro - Tel. (951) 51 6-88-89
+              %dt
+                LA PITIONA
+                %span
+                  Sabor de Oaxaca
+              %dd
+                Allende 108 Col. Centro. - Tel. (951) 514 0690
+              %dt
+                LA BIZNAGA
+                %span
+                  Cocina mestiza
+              %dd
+                Garcia Vigil 512, Centro    Tel. (951) 516 1800
+              %dt
+                LOS CHAVALES
+                %span
+                  Carnes al Grill Argentino
+              %dd
+                Netzahualcóyotl 300 esq. Eucaliptos, Reforma - Tel. (951) 513 0688 - (951) 503 8673
+              %dt
+                El CHE GAUCHO
+                %span
+                  Restaurant Argentino
+              %dd
+                Las Rosas 700 esq. Álamos, Reforma. - Tel. (951) 514 2122 - (951) 518 5532
+              %dt
+                LA TECA
+                %span
+                  Sabor Mexicano
+              %dd
+                Violetas 200, Reforma - Tel. (951) 515 0563
+              %dt
+                ZANDUNGA
+                %span
+                  Comida Oaxaqueña
+              %dd
+                Garcia Vigil 105 esq. Carranza, Centro Histórico - Jesús Tel. (951) 516 2265
+              %dt
+                CASA OAXACA EL CAFÉ
+                %span
+                  Desayuno fresco y aromático
+              %dd
+                Jazmines 518, Col. Reforma - Tel. (951) 502 6017
+          .bares.m-t-xl
+            %h1.text-center.m-t-xl.c_orange BARES
+            %dl
+              %dt
+                LA COSTUMBRE
+              %dd
+                Macedonio Alcalá  501 - Tel. (951) 516-01-75
+              %dt
+                EL CANDELA
+                %span
+                  Música salsa
+              %dd
+                Murguía  413 - Tel. (951) 514-20-10
+              %dt
+                SALON CENTRAL
+                %span
+                  Buena música
+              %dd
+                Matamoros 101 - Tel. (951) 514-95-21
+              %dt
+                LOS DANZANTES
+                %span
+                  Ambiente agradable.
+              %dd
+                Macedonio Alcalá  403-3 - Tel. (951) 520-0215
+              %dt
+                LA CANTINITA
+                %span
+                  Ambiente agradable.
+              %dd
+                Macedonio Alcalá 303. - Tel. (951) 51 6-89-61
+              %dt
+                MEZCALERÍA LOS AMANTES
+                %span
+                  Destilados de agave
+              %dd
+                Allende 107, Centro Histórico entre Garcia vigil y Alcala - Tel. (951) 136 4099
+              %dt
+                LA CAVA
+                %span
+                  Tienda de Mezcales
+              %dd
+                Gómez Farías 212-B Centro Histórico. Jardín Consati - Tel. (951) 515 7977 - (951) 515 2335
+              %dt
+                LA MEZCALOTECA
+                %span
+                  Mezcales del pasado y futuro
+              %dd
+                Reforma 506, Centro - Tel. (951) 514 0082
+              %dt
+                EL OLIVO
+                %span
+                  Pinchos, tapas, tragos y vinos
+              %dd
+                Murguía 218, Centro - Tel. (951) 514 6983
+              %dt
+                BAR/TERRAZA
+                %span
+                  Parte Superior del Hotel azul
+              %dd
+                Abasolo 313, Centro - Tel. (951) 501 0016
+          .modal-close-btn.m-t-xl.m-b-xl{:for => "restaurantes"}
+            CERRAR

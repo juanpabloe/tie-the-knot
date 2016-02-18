@@ -30,50 +30,60 @@ title: Oaxaca Boda
         .grid-items-lines
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Grid Item
-            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+            %h3 11:00am: Tour a Monte Albán.
+            %p
+              “su nombre en zapoteco es Danibaan, que significa "Montaña Sagrada" y, en mixteco, Sahandevul, "al pie del cielo".
+              =link_to 'Conoce Monte Albán', 'http://www.mexicodesconocido.com.mx/monte-alban.html', target: '_blanc'
+              =link_to 'Conoce Monte Albán', 'http://www.visitmexico.com/es/monte-alban-oaxaca-la-capital-zapoteca', target: '_blanc'
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Another Item
-            %p Lorem ipsum consectetur dolor sit amet, consectetur adipisicing elit.
+            %h3 18:00 pm: Tour peatonal por el centro histórico.
+            %p
+              Vamos a conocer!
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Another Grid Item
-            %p Lorem ipsum dolor sit amet, elit.
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Grid Item
-            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
-          .grid-item.grid-item-big
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Wider Grid Item
-            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, illum.
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 A Grid Item
-            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Item
-            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 Last Grid Item
-            %p Lorem ipsum dolor sit amet, elit. Rem, illum.
+            %h3 A19:30 pm: Cata de Mezcal @Expendio
+            %p Vamos a conocer el mezcal para aprender a tomar.
           .right-cover
           .bottom-cover
     %li.tab-header-and-content
       =link_to 'Viernes', '#', class: 'tab-link'
       .tab-content
-        %p Ut laoreet augue et neque pretium non sagittis nibh pulvinar. Etiam ornare tincidunt orci quis ultrices. Pellentesque ac sapien ac purus gravida ullamcorper. Duis rhoncus sodales lacus, vitae adipiscing tellus pharetra sed. Praesent bibendum lacus quis metus condimentum ac accumsan orci vulputate. Aenean fringilla massa vitae metus facilisis congue. Morbi placerat eros ac sapien semper pulvinar. Vestibulum facilisis, ligula a molestie venenatis, metus justo ullamcorper ipsum, congue aliquet dolor tortor eu neque. Sed imperdiet, nibh ut vestibulum tempor, nibh dui volutpat lacus, vel gravida magna justo sit amet quam. Quisque tincidunt ligula at nisl imperdiet sagittis. Morbi rutrum tempor arcu, non ultrices sem semper a. Aliquam quis sem mi.
+        .grid-items-lines
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 18:30 pm: Callejoneada. Nos encontramos en el atrio de Santo Domingo
+            %p “Tomar, cantar, bailar...".
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 20:00 pm: Cocktail de Bienvenida @Camino Real Oaxaca
+            %p ¡Bienvenidos!
+          .right-cover
+          .bottom-cover
     %li.tab-header-and-content
       =link_to 'Sábado', '#', class: 'tab-link'
       .tab-content
-        %p Donec mattis mauris gravida metus laoreet non rutrum sem viverra. Aenean nibh libero, viverra vel vestibulum in, porttitor ut sapien. Phasellus tempor lorem id justo ornare tincidunt. Nulla faucibus, purus eu placerat fermentum, velit mi iaculis nunc, bibendum tincidunt ipsum justo eu mauris. Nulla facilisi. Vestibulum vel lectus ac purus tempus suscipit nec sit amet eros. Nullam fringilla, enim eu lobortis dapibus, quam magna tincidunt nibh, sit amet imperdiet dolor justo congue turpis.
+        .grid-items-lines
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 18:00 pm: Ceremonia religiosa @Templo de Santo Domingo
+            %p ¡La Boda!
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 19:30 pm: Recepción @Jardín Etnobotánico
+            %p La Fiesta!
+          .right-cover
+          .bottom-cover
     %li.tab-header-and-content
       =link_to 'Domingo', '#', class: 'tab-link'
       .tab-content
-        %p Sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus dui urna.
+        .grid-items-lines
+          .grid-item
+            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
+            %h3 13:00 pm: Brunch “Vuelve a la vida”
+            %p ¡Porque la fiesta no termina!
+          .right-cover
+          .bottom-cover
 
 %section#oaxaca.bg-purple
   %h1 Oaxaca
@@ -279,7 +289,8 @@ title: Oaxaca Boda
                     .modal-title.c_purple DÓNDE DORMIR
                     .modal-close{:for => "alojamiento"}
                     .hoteles.p-b-xl
-                      %h1.text-center.m-t-lg.c_pink HOTELES
+                      %h1.text-center.m-t-lg.c_pink.m-b-none HOTELES
+                      %h4.text-center.m-b-md "Reserva diciendo que vas a nuestra boda"
                       %dl
                         %dt
                           QUINTA REAL
@@ -290,11 +301,13 @@ title: Oaxaca Boda
                         %dd.m-t-sm
                           35 Habitaciones<br>
                           5 DE MAYO CENTRO - Tel: (951) 5-01-61-00, 01 y 02 / 01800 9-01-23-00<br>
-                          %a{href: 'mailto:oaxaca@caminoreal.com.mx'} oaxaca@caminoreal.com.mx<br>
+                          %a{href: 'mailto:mroman@quintareal.com'} mroman@quintareal.com
+                          y
+                          %a{href: 'mailto:fandres@quintareal.com'} fandres@quintareal.com
+                          <br>
                           %strong
-                            Tarifa no confirmada<br>
-                            Límite de reservación Según contrato<br>
-                            Confirmar con Dalia
+                            Tarifa $2800 a $4800<br>
+                            Límite de reservación 20 de febrero<br>
                       %dl
                         %dt
                           HOTEL MONTE CARMELO
@@ -309,7 +322,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $980.00 - $1580.00 Impuestos incluídos.<br>
                             Límite de reservación 18 de septiembre<br>
-                            Confirmar con José
                       %dl
                         %dt
                           HOLIDAY INN EXPRESS
@@ -324,7 +336,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $1963.50; $476.00 Persona extra Impuestos incluídos.<br>
                             Límite de reservación 21 de octubre<br>
-                            Confirmar con Noe
                       %dl
                         %dt
                           DE LA PARRA
@@ -339,7 +350,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $2275.00 - $2844.29 Impuestos incluídos.<br>
                             Límite de reservación 16 de octubre<br>
-                            Confirmar con Maribel
                       %dl
                         %dt
                           CASONA DE TITA
@@ -354,7 +364,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $3400.00 - $3950.00. Desayuno e impuestos incluídos.<br>
                             Límite de reservación 16 de septiembre<br>
-                            Confirmar con Lourdes
                       %dl
                         %dt
                           OAXACALLI
@@ -369,7 +378,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $590.00 - $890.00. Impuestos incluídos.<br>
                             Límite de reservación 1O de octubre<br>
-                            Confirmar con Guillermo
                       %dl
                         %dt
                           CASANTICA
@@ -382,7 +390,6 @@ title: Oaxaca Boda
                           Morelos 601, Centro - 01 (951) 5162673<br>
                           %a{href: 'mailto:reservaciones@hotelcasantica.com'}reservaciones@hotelcasantica.com<br>
                           %strong
-                            Confirmar con Carlos
                       %dl
                         %dt
                           PARADOR SAN MIGUEL
@@ -397,7 +404,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $2300.00 - $3200.00 Impuestos incluídos<br>
                             Límite de reservación 18 de octubre<br>
-                            Confirmar con Ada
                       %dl
                         %dt
                           PARADOR SAN AGUSTIN
@@ -412,7 +418,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $810.00 - $1300.00 Impuestos incluídos.<br>
                             Límite de reservación 18 de octubre<br>
-                            Confirmar con Denisse
                       %dl
                         %dt
                           CATRINA DE ALCALA
@@ -427,7 +432,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $1600.00 - $1800.00 $300 Persona extra. Incluye impuestos y desayuno continental.<br>
                             Límite de reservación 18 de septiembre<br>
-                            Confirmar con Orieta
                       %dl
                         %dt
                           CASA CATRINA
@@ -442,7 +446,6 @@ title: Oaxaca Boda
                           %strong
                             Tarifa $1700.00 - $2200.00 Incluye impuestos y desayuno continental.<br>
                             Límite de reservación 18 de septiembre<br>
-                            Confirmar con Orieta
 
       #slider3
         %div= image_tag 'oaxaca/2.jpg'
@@ -775,8 +778,31 @@ title: Oaxaca Boda
 
 %section#contact.bg-light-gray
   %h1 Contacto
+  .m-t-xl.text-center
+    %h3
+      Marcela González Grijalva<br>
+      Teléfono oficina: 01 (951) 5175044<br>
+      01 (951) 5178737 / 044951473098
+
+
 %section#gift.bg-orange
   %h1 El Regalo
+  .m-t-xl.text-center
+    %p Para nosotros el mayor regalo es que puedan acompañarnos en este día tan importante, especial y feliz en nuestras vidas.
+    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de ensueño para celebrar nuestro enlace. 
+    %p Si estas leyendo esto es porque eres muy importante para nosotros, estamos muy emocionados de poder compartir este día contigo, nos vemos en Oaxaca.
+  .m-t-xl.boxes
+    .box.text-center
+      .small
+        Banco: HSBC<br>
+        Numero de cuenta: 6405577887<br>
+        Clabe: 021580064055778877
+    .box.text-center
+      .small
+        Banco: Banorte<br>
+        Numero de cuenta: 0227275999<br>
+        Clabe:072 580 00227275999 4
+
 %section#rsvp.bg-burgundy
   %h1 RSVP
 

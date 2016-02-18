@@ -527,21 +527,6 @@
     }
   }
 }
-#contact{
-  padding:100px 60px 60px 60px;
-}
-#rsvp{
-  padding:100px 60px 60px 60px;
-  color:#fff;
-
-}
-#gift{
-  padding:100px 60px 60px 60px;
-  color:#fff;
-  //background-image: url(../images/bg/1.jpg);
-  //background-position: fixed;
-}
-#contact, #rsvp, #gift{min-height: 600px;}
 
 //modal
 .modal {
@@ -710,6 +695,26 @@
 
 .modal-open {
   overflow: hidden;
+}
+#contact{
+  padding:100px 60px 60px 60px;
+}
+#rsvp{
+  padding:100px 60px 60px 60px;
+  color:#fff;
+
+}
+#gift{
+  padding:100px 60px 60px 60px;
+  color:#fff;
+  //background-image: url(../images/bg/1.jpg);
+  //background-position: fixed;
+  .boxes{
+      @include outer-container;
+    .box{
+      @include span-columns(6);
+    }
+  }
 }
 
 
