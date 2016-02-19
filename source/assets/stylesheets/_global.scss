@@ -352,7 +352,7 @@
   $grid-item-columns: 4;
   $grid-item-big-columns: 8;
   $grid-item-color: $base-font-color;
-  $grid-item-height: 14em;
+  $grid-item-height: 18em;
   margin-top:40px;
 
   @include clearfix;
@@ -381,6 +381,7 @@
     &:hover {
       background: transparentize($grid-item-color, 0.95);
     }
+    h3{font-size: 1.2em;}
   }
 
   .grid-item img {
