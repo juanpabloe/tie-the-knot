@@ -445,6 +445,10 @@
   .accordion-tabs-minimal{margin-top:60px;}
   .box{ @include span-columns(3);}
 
+  @include media(min-width 860px max-width 959px) {
+    h3{font-size: 1em; line-height: 1.4em;}
+  }
+
 }
 #oaxaca{
   padding:120px 0px 0px 0px;
@@ -703,6 +707,7 @@
 #rsvp{
   padding:100px 60px 60px 60px;
   color:#fff;
+  p{font-size: 1.23em; font-weight: 300;}
 
 }
 #gift{
@@ -710,10 +715,35 @@
   color:#fff;
   //background-image: url(../images/bg/1.jpg);
   //background-position: fixed;
+  p{font-size: 1.23em; font-weight: 300;}
   .boxes{
       @include outer-container;
     .box{
       @include span-columns(6);
+      .small{
+        font-size: .8em; padding-top: 30px;
+      }
+    }
+  }
+}
+#slider{
+      top:60px;
+
+  .caption{
+    position: absolute; z-index: 99;
+    left: 10%; top:90%; transform:translate(-10%, -90%);
+    display: inline-block;font-size: 40px;
+    text-transform: uppercase;color: #fff; text-shadow: 1px 1px 2px rgba(0, 0 ,0, .3);
+    span{text-transform: none;}
+
+    @include media(min-width 960px max-width 1199px) {
+      font-size: 30px;
+    }
+    @include media(min-width 780px max-width 959px) {
+      font-size: 24px;
+    }
+    @include media(max-width 779px) {
+      display:none;
     }
   }
 }

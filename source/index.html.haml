@@ -5,7 +5,7 @@ title: Oaxaca Boda
 %header#header.centered-navigation{role: "banner"}
   .centered-navigation-wrapper.scroll-on-page
     %a.mobile-logo{href: "javascript:void(0)"}
-      %img{alt: "Logo image", src: "https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png"}/
+      %img{alt: "Boda Cata & Ale", src: "/assets/images/logo.svg"}
     %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: "javascript:void(0)"} MENU
     %nav.scroll-on-page-top{role: "navigation"}
       %ul#js-centered-navigation-menu.centered-navigation-menu.show
@@ -18,8 +18,25 @@ title: Oaxaca Boda
         %li.nav-link= link_to 'RSVP', '#rsvp', class: 'scroll-on-page-link'
 
 %section#slider
-  %div= image_tag 'slider/slider1.jpg'
-  %div= image_tag 'slider/slider2.jpg'
+  %div
+    = image_tag 'slider/slider1.jpg'
+    .caption
+      Amor, todos los días.<br>
+      Aquí a mi lado, junto a mí. <span>(Jaime Sabines)</span>
+  %div
+    = image_tag 'slider/slider2.jpg'
+    .caption
+      Vamos a guardar este día<br>
+      entre las horas para siempre. <span>(Jaime Sabines)</span>
+
+  %div
+    = image_tag 'slider/slider3.jpg'
+    .caption
+      Y en el tranvía <br>
+      a un ansioso, sarcástico y curioso, <br>
+      que nos miró a los dos con ironía, <br>
+      le dije poniéndome dichoso: <br>
+      «Perdóneme, Señor esta alegría.» <span>(Amado Nervo)</span>
 
 %section#wedding
   %h1 La Boda
@@ -31,20 +48,15 @@ title: Oaxaca Boda
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 11:00am<br>Tour a Monte Albán
-            %p
-              “su nombre en zapoteco es Danibaan, que significa "Montaña Sagrada" y, en mixteco, Sahandevul, "al pie del cielo".
-              %br
-              =link_to 'Conoce Monte Albán', 'http://www.mexicodesconocido.com.mx/monte-alban.html', target: '_blanc'
-              =link_to 'Visita Monte Albán', 'http://www.visitmexico.com/es/monte-alban-oaxaca-la-capital-zapoteca', target: '_blanc'
+            %p Punto de encuentro: atrio de Santo Domingo
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 18:00 pm<br> Tour peatonal por el centro histórico.
-            %p
-              Vamos a conocer!
+            %p Punto de encuentro: atrio de Santo Domingo
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 19:30pm <br>Cata de Mezcal @Expendio
-            %p Vamos a conocer el mezcal para aprender a tomar.
+            %p Punto de encuentro: atrio de Santo Domingo
           .right-cover
           .bottom-cover
     %li.tab-header-and-content
@@ -57,7 +69,7 @@ title: Oaxaca Boda
             %p “Tomar, cantar, bailar...".
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 20:00 pm: Cocktail de Bienvenida @Camino Real Oaxaca
+            %h3 20:00 pm<br> Cocktail de Bienvenida @Camino Real Oaxaca
             %p ¡Bienvenidos!
           .right-cover
           .bottom-cover
@@ -67,11 +79,11 @@ title: Oaxaca Boda
         .grid-items-lines
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 18:00 pm: Ceremonia religiosa @Templo de Santo Domingo
+            %h3 18:00 pm<br> Ceremonia religiosa @Templo de Santo Domingo
             %p ¡La Boda!
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 19:30 pm: Recepción @Jardín Etnobotánico
+            %h3 19:30 pm<br> Recepción @Jardín Etnobotánico
             %p La Fiesta!
           .right-cover
           .bottom-cover
@@ -81,7 +93,7 @@ title: Oaxaca Boda
         .grid-items-lines
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 13:00 pm: Brunch “Vuelve a la vida”
+            %h3 13:00 pm<br> Brunch “Vuelve a la vida”
             %p ¡Porque la fiesta no termina!
           .right-cover
           .bottom-cover
@@ -277,8 +289,7 @@ title: Oaxaca Boda
       .box-content.bg-yellow
         %h3 Dónde dormir
         %ul
-          %li Sociis natoque penatibus et magnis dis parturient montes
-          %li Nulla faucibus, purus eu placerat fermentum
+          %li Pásale, pásele, mi casa es tu casa...
           .m-t-md
             .modal
               %label{:for => "alojamiento"}
@@ -458,8 +469,7 @@ title: Oaxaca Boda
       .box-content.bg-orange
         %h3 Qué hacer
         %ul
-          %li Sociis natoque penatibus et magnis dis parturient montes
-          %li Nulla faucibus, purus eu placerat fermentum
+          %li Oaxaca es la primera ciudad en ser incluida en la lista del Patrimonio de la Humanidad de la UNESCO, en 1986.
           .m-t-md
             .modal
               %label{:for => "actividades"}
@@ -652,8 +662,7 @@ title: Oaxaca Boda
       .box-content.bg-green
         %h3 INFORMACIÓN ÚTIL
         %ul
-          %li Sociis natoque penatibus et magnis dis parturient montes
-          %li Nulla faucibus, purus eu placerat fermentum
+          %li Salones de Belleza, Sitios de Taxis, Teléfonos útiles, Información.
         .m-t-md
           .modal
             %label{:for => "info"}
@@ -793,17 +802,20 @@ title: Oaxaca Boda
     %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de ensueño para celebrar nuestro enlace. 
     %p Si estas leyendo esto es porque eres muy importante para nosotros, estamos muy emocionados de poder compartir este día contigo, nos vemos en Oaxaca.
   .m-t-xl.boxes
-    .box.text-center
+    .box.text-right
       .small
         Banco: HSBC<br>
         Numero de cuenta: 6405577887<br>
         Clabe: 021580064055778877
-    .box.text-center
+    .box.text-left
       .small
         Banco: Banorte<br>
         Numero de cuenta: 0227275999<br>
         Clabe:072 580 00227275999 4
 
 %section#rsvp.bg-burgundy
-  %h1 RSVP
-
+  .text-center
+    %h1 RSVP
+    %p Es muy importante para nosotros que nos ayudes a confirmar tu asistencia a todas las actividades.
+    %p Por favor, responde a este cuestionario:
+    %p=link_to 'link', '#', target: '_blanc'
