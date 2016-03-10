@@ -399,7 +399,8 @@
     }
 
   .grid-item p {
-      color: transparentize($grid-item-color, 0.4);
+      color: transparentize($grid-item-color, 0.2);
+      font-weight: 300;
       line-height: 1.5em;
       text-align: center;
 
@@ -705,10 +706,13 @@
   padding:100px 60px 60px 60px;
 }
 #rsvp{
-  padding:100px 60px 60px 60px;
+  padding:100px 60px 120px 60px;
   color:#fff;
   p{font-size: 1.23em; font-weight: 300;}
-
+  button {
+    margin-top:15px;
+    a{color:#fff;}
+  }
 }
 #gift{
   padding:100px 60px 60px 60px;
@@ -727,13 +731,13 @@
   }
 }
 #slider{
-      top:60px;
+  top:60px;
 
   .caption{
     position: absolute; z-index: 99;
     left: 10%; top:90%; transform:translate(-10%, -90%);
-    display: inline-block;font-size: 40px;
-    text-transform: uppercase;color: #fff; text-shadow: 1px 1px 2px rgba(0, 0 ,0, .3);
+    display: inline-block;font-size: 40px; line-height: 50px;
+    color: #fff; text-shadow: 1px 1px 2px rgba(0, 0 ,0, .3);
     span{text-transform: none;}
 
     @include media(min-width 960px max-width 1199px) {

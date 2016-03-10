@@ -20,7 +20,7 @@ $(document).ready(function() {
     autoplay: true,
     arrows: false,
     fade: true,
-    autoplaySpeed: 10000
+    autoplaySpeed: 5000
   });
   // $('#slider1, #slider2, #slider3, #slider4').slick({
   //   dots: true,

@@ -21,22 +21,22 @@ title: Oaxaca Boda
   %div
     = image_tag 'slider/slider1.jpg'
     .caption
-      Amor, todos los días.<br>
-      Aquí a mi lado, junto a mí. <span>(Jaime Sabines)</span>
+      "Amor, todos los días.<br>
+      Aquí a mi lado, junto a mí." <span>(Jaime Sabines)</span>
   %div
     = image_tag 'slider/slider2.jpg'
     .caption
-      Vamos a guardar este día<br>
-      entre las horas para siempre. <span>(Jaime Sabines)</span>
+      "Vamos a guardar este día<br>
+      entre las horas para siempre." <span>(Jaime Sabines)</span>
 
-  %div
-    = image_tag 'slider/slider3.jpg'
-    .caption
-      Y en el tranvía <br>
-      a un ansioso, sarcástico y curioso, <br>
-      que nos miró a los dos con ironía, <br>
-      le dije poniéndome dichoso: <br>
-      «Perdóneme, Señor esta alegría.» <span>(Amado Nervo)</span>
+  / %div
+  /   = image_tag 'slider/slider3.jpg'
+  /   .caption
+  /     Y en el tranvía <br>
+  /     a un ansioso, sarcástico y curioso, <br>
+  /     que nos miró a los dos con ironía, <br>
+  /     le dije poniéndome dichoso: <br>
+  /     «Perdóneme, Señor esta alegría.» <span>(Amado Nervo)</span>
 
 %section#wedding
   %h1 La Boda
@@ -48,7 +48,7 @@ title: Oaxaca Boda
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 11:00am<br>Tour a Monte Albán
-            %p Punto de encuentro: atrio de Santo Domingo
+            %p Punto de encuentro: Hotel Quinta Real
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 18:00 pm<br> Tour peatonal por el centro histórico.
@@ -56,7 +56,6 @@ title: Oaxaca Boda
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
             %h3 19:30pm <br>Cata de Mezcal @Expendio
-            %p Punto de encuentro: atrio de Santo Domingo
           .right-cover
           .bottom-cover
     %li.tab-header-and-content
@@ -65,11 +64,11 @@ title: Oaxaca Boda
         .grid-items-lines
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 18:30 pm<br> Callejoneada. Nos encontramos en el atrio de Santo Domingo
-            %p “Tomar, cantar, bailar...".
+            %h3 18:30 pm<br> Callejoneada.
+            %p Punto de encuenttro: atrio de Santo Domingo
           .grid-item
             =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 20:00 pm<br> Cocktail de Bienvenida @Camino Real Oaxaca
+            %h3 20:00 pm<br> Cocktail de Bienvenida Quinta Real
             %p ¡Bienvenidos!
           .right-cover
           .bottom-cover
@@ -318,8 +317,7 @@ title: Oaxaca Boda
                           %a{href: 'mailto:fandres@quintareal.com'} fandres@quintareal.com
                           <br>
                           %strong
-                            Tarifa $2800 a $4800<br>
-                            Límite de reservación 20 de febrero<br>
+                            Tarifa $2800 a $4800
                       %dl
                         %dt
                           HOTEL MONTE CARMELO
@@ -469,7 +467,7 @@ title: Oaxaca Boda
       .box-content.bg-orange
         %h3 Qué hacer
         %ul
-          %li Oaxaca es la primera ciudad en ser incluida en la lista del Patrimonio de la Humanidad de la UNESCO, en 1986.
+          %li Oaxaca es la primera ciudad en ser incluida en la lista<br> del Patrimonio de la Humanidad de la UNESCO, en 1986.
           .m-t-md
             .modal
               %label{:for => "actividades"}
@@ -799,7 +797,7 @@ title: Oaxaca Boda
   %h1 El Regalo
   .m-t-xl.text-center
     %p Para nosotros el mayor regalo es que puedan acompañarnos en este día tan importante, especial y feliz en nuestras vidas.
-    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de ensueño para celebrar nuestro enlace. 
+    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de miel de ensueño para celebrar nuestro enlace. 
     %p Si estas leyendo esto es porque eres muy importante para nosotros, estamos muy emocionados de poder compartir este día contigo, nos vemos en Oaxaca.
   .m-t-xl.boxes
     .box.text-right
@@ -818,4 +816,5 @@ title: Oaxaca Boda
     %h1 RSVP
     %p Es muy importante para nosotros que nos ayudes a confirmar tu asistencia a todas las actividades.
     %p Por favor, responde a este cuestionario:
-    %p=link_to 'link', '#', target: '_blanc'
+    %button
+      =link_to 'Responder ahora', 'https://docs.google.com/forms/d/1eTQ13Y7eDcZMcVmLA1_d4VPnl1weBwQ7kRlKzKP6c0g/viewform?edit_requested=true', target: '_blanc'
