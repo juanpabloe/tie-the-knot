@@ -1,9 +1,13 @@
 @import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700,900);
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans|Open+Sans');
+
 $lato: 'Lato', sans-serif;
+$josefin: 'Josefin Sans', sans-serif;
+$open-sans: 'Open Sans', sans-serif;
 
 // Typography
-$base-font-family: $lato;
-$heading-font-family: $base-font-family;
+$base-font-family: $josefin;
+$heading-font-family: $josefin;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -19,21 +23,17 @@ $small-spacing: $base-spacing / 2;
 $base-z-index: 0;
 
 // Colors
-$green: #3e7363;
-$pink: #e91852;
-$yellow: #fc9400;
-$purple: #602052;
-$red: #db3935;
-$orange: #fd5d00;
-$burgundy: #4d0512;
 $dark-gray: #3a3938;
 $medium-gray: #7a7877;
 $light-gray: #e8e6e3;
-
+$light-pink: #FBEDEC;
+$pink: #F8DBE0;
+$light-blue: #CDDFED;
+$blue: #ABC5D2;
 
 // Font Colors
 $base-font-color: $dark-gray;
-$action-color: $pink;
+$action-color: $blue;
 
 // Border
 $base-border-color: $light-gray;

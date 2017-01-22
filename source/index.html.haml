@@ -1,789 +1,68 @@
 ---
-title: Oaxaca Boda
+title: 'JP & Sarahi'
 ---
 
 %header#header.centered-navigation{role: "banner"}
   .centered-navigation-wrapper.scroll-on-page
     %a.mobile-logo{href: "javascript:void(0)"}
-      %img{alt: "Boda Cata & Ale", src: "/assets/images/logo.svg"}
+      %img{alt: "JP & Sarahi", src: "/assets/images/logo.svg"}
     %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: "javascript:void(0)"} MENU
     %nav.scroll-on-page-top{role: "navigation"}
       %ul#js-centered-navigation-menu.centered-navigation-menu.show
+        %li.nav-link.logo=link_to 'JP&S', '#slider', alt: 'JP & sarahi', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'Nosotros', '#slider', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'La Boda', '#wedding', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'Oaxaca', '#oaxaca', class: 'scroll-on-page-link'
-        %li.nav-link.logo=link_to image_tag('logo.svg'), '#slider', alt: 'Boda Cata & Ale', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'Contacto', '#contact', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'El Regalo', '#gift', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Detalles', '#wedding', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Fecha', '#playa', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Mesa', '#gift', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'RSVP', '#rsvp', class: 'scroll-on-page-link'
 
 %section#slider
   %div
-    = image_tag 'slider/slider1.jpg'
-    .caption
-      "Amor, todos los días.<br>
-      Aquí a mi lado, junto a mí." <span>(Jaime Sabines)</span>
-  %div
-    = image_tag 'slider/slider2.jpg'
-    .caption
-      "Vamos a guardar este día<br>
-      entre las horas para siempre." <span>(Jaime Sabines)</span>
-
-  / %div
-  /   = image_tag 'slider/slider3.jpg'
-  /   .caption
-  /     Y en el tranvía <br>
-  /     a un ansioso, sarcástico y curioso, <br>
-  /     que nos miró a los dos con ironía, <br>
-  /     le dije poniéndome dichoso: <br>
-  /     «Perdóneme, Señor esta alegría.» <span>(Amado Nervo)</span>
+    = image_tag 'slider/slider1.JPG'
 
 %section#wedding
-  %h1 La Boda
-  %ul.accordion-tabs-minimal
-    %li.tab-header-and-content
-      =link_to 'Jueves', '#', class: 'tab-link is-active'
-      .tab-content
-        .grid-items-lines
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 11:00am<br>Tour a Monte Albán
-            %p
-              Punto de encuentro: Hotel Quinta Real <br>
-              Costo $290 por persona (A pagar ese día)
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 19:30pm <br>Cata de Mezcal @Expendio
-            %p Costo $150 por persona (A pagar ese día)
-          .right-cover
-          .bottom-cover
-    %li.tab-header-and-content
-      =link_to 'Viernes', '#', class: 'tab-link'
-      .tab-content
-        .grid-items-lines
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 18:30 pm<br> Callejoneada.
-            %p Punto de encuentro: atrio de Santo Domingo
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 20:00 pm<br> Cocktail de Bienvenida Quinta Real
-            %p ¡Bienvenidos!
-          .right-cover
-          .bottom-cover
-    %li.tab-header-and-content
-      =link_to 'Sábado', '#', class: 'tab-link'
-      .tab-content
-        .grid-items-lines
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 18:00 pm<br> Ceremonia religiosa @Templo de Santo Domingo
-            %p ¡La Boda!
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 19:30 pm<br> Recepción @Jardín Etnobotánico
-            %p ¡La Fiesta!
-          .right-cover
-          .bottom-cover
-    %li.tab-header-and-content
-      =link_to 'Domingo', '#', class: 'tab-link'
-      .tab-content
-        .grid-items-lines
-          .grid-item
-            =image_tag 'logo.svg', alt: 'Boda Cata & Ale'
-            %h3 13:00 pm<br> Brunch “Vuelve a la vida”
-            %p ¡Porque la fiesta no termina!
-          .right-cover
-          .bottom-cover
+  %h2 Nos emociona invitarte a nuestra boda el próximo
+  %h2 30 de septiembre 2017 en Playa del Carmen, Quintana Roo.
+  .grid-items-lines
+    .grid-item
+      %h3 5:00 pm<br> Ceremonia religiosa
+      %p @ Playa frente a Azul Fives Hotel
+    .grid-item
+      %h3 6:00 pm<br> Cocktail
+      %p Terraza Skybar @ Azul Fives Hotel
+    .grid-item
+      %h3 8:00 pm<br> Recepción
+      %p Playa frente a Hotel
+    .right-cover
+    .bottom-cover
 
-%section#oaxaca.bg-purple
-  %h1 Oaxaca
+%section#playa.bg-light-blue
+  %h1 Playa del Carmen
   %h2
-    … de pechuga mezcalito, mezcalito de maguey <br> pa todo mal mezcalito, y para todo bien tambien …
   .row
     .box
-      .box-content.bg-red
-        %h3 Qué tomar y comer
+      .box-content.bg-blue
+        %h3 Hotel
         %ul
-          %li Cuentan que en Oaxaca se toma el mezcal con café
-          %li dicen que la hierba te cura la mala fé.
+          %li Test
+          %li Test
 
         .m-t-md
           .modal
-            %label{:for => "restaurantes"}
+            %label{:for => "test"}
               .modal-trigger
-                %a.btn Guía de bares y restaurantes
+                %a.btn Test modal
             %input#restaurantes.modal-state{:type => "checkbox"}
               .modal-fade-screen
                 .modal-inner
-                  .modal-title.c_purple QUÉ TOMAR Y COMER
-                  .modal-close{:for => "restaurantes"}
+                  .modal-title.c_blue Test modal title
+                  .modal-close{:for => "test"}
                   .restaurantes.p-b-xl
-                    %h1.text-center.m-t-lg.c_red RESTAURANTES
-                    %dl
-                      %dt
-                        CATEDRAL
-                        %span
-                          Cocina Típica Regional
-                      %dd
-                        García Vigil 105 - Tel. (951) 516-3285
-                      %dt
-                        LA CASA DE LA ABUELA
-                        %span
-                          Cocina Típica Regional
-                      %dd
-                        Hidalgo  616 - Tel. (951) 516-3544
-                      %dt
-                        LOS PACOS
-                        %span
-                          Cocina Típica Regional
-                      %dd
-                        Constitución 104 - Tel. (951) 515-3523
-                      %dt
-                        LOS DANZANTES
-                        %span
-                          Cocina Mexicana.
-                      %dd
-                        Macedonio Alcalá  403-3 - Tel. (951) 520-0215
-                      %dt
-                        EL REFECTORIO
-                        %span
-                          Cocina Regional e Internacional
-                      %dd
-                        5 de Mayo 300 - Hotel Camino Real - Tel. (951) 51 6-0611
-                      %dt
-                        EL ASADOR VASCO
-                        %span
-                          Cocina española y Oaxaqueña
-                      %dd
-                        Portal de las Flores 10-A - Tel. (951) 51 6-4747
-                      %dt
-                        LA TOSCANA
-                        %span
-                          Cocina Italiana
-                      %dd
-                        Calle 5 de Mayo 614 - Barrio de Jalatlaco - Tel. (951) 516-4747
-                      %dt
-                        FONDA LA ABUELITA
-                        %span
-                          El mejor lugar para desayunar
-                      %dd
-                        Mercado 20 de Noviembre - Tel. (951) 516-27-91
-                      %dt
-                        CASA OAXACA EL RESTAURANTE
-                        %span
-                          Cocina auténtica Oaxaqueña
-                      %dd
-                        Constitución 104. Centro - Tel. (951) 51 6-88-89
-                      %dt
-                        LA PITIONA
-                        %span
-                          Sabor de Oaxaca
-                      %dd
-                        Allende 108 Col. Centro. - Tel. (951) 514 0690
-                      %dt
-                        LA BIZNAGA
-                        %span
-                          Cocina mestiza
-                      %dd
-                        Garcia Vigil 512, Centro    Tel. (951) 516 1800
-                      %dt
-                        LOS CHAVALES
-                        %span
-                          Carnes al Grill Argentino
-                      %dd
-                        Netzahualcóyotl 300 esq. Eucaliptos, Reforma - Tel. (951) 513 0688 - (951) 503 8673
-                      %dt
-                        El CHE GAUCHO
-                        %span
-                          Restaurant Argentino
-                      %dd
-                        Las Rosas 700 esq. Álamos, Reforma. - Tel. (951) 514 2122 - (951) 518 5532
-                      %dt
-                        LA TECA
-                        %span
-                          Sabor Mexicano
-                      %dd
-                        Violetas 200, Reforma - Tel. (951) 515 0563
-                      %dt
-                        ZANDUNGA
-                        %span
-                          Comida Oaxaqueña
-                      %dd
-                        Garcia Vigil 105 esq. Carranza, Centro Histórico - Jesús Tel. (951) 516 2265
-                      %dt
-                        CASA OAXACA EL CAFÉ
-                        %span
-                          Desayuno fresco y aromático
-                      %dd
-                        Jazmines 518, Col. Reforma - Tel. (951) 502 6017
-                  .bares.m-t-xl
-                    %h1.text-center.m-t-xl.c_orange BARES
-                    %dl
-                      %dt
-                        LA COSTUMBRE
-                      %dd
-                        Macedonio Alcalá  501 - Tel. (951) 516-01-75
-                      %dt
-                        EL CANDELA
-                        %span
-                          Música salsa
-                      %dd
-                        Murguía  413 - Tel. (951) 514-20-10
-                      %dt
-                        SALON CENTRAL
-                        %span
-                          Buena música
-                      %dd
-                        Matamoros 101 - Tel. (951) 514-95-21
-                      %dt
-                        LOS DANZANTES
-                        %span
-                          Ambiente agradable.
-                      %dd
-                        Macedonio Alcalá  403-3 - Tel. (951) 520-0215
-                      %dt
-                        LA CANTINITA
-                        %span
-                          Ambiente agradable.
-                      %dd
-                        Macedonio Alcalá 303. - Tel. (951) 51 6-89-61
-                      %dt
-                        MEZCALERÍA LOS AMANTES
-                        %span
-                          Destilados de agave
-                      %dd
-                        Allende 107, Centro Histórico entre Garcia vigil y Alcala - Tel. (951) 136 4099
-                      %dt
-                        LA CAVA
-                        %span
-                          Tienda de Mezcales
-                      %dd
-                        Gómez Farías 212-B Centro Histórico. Jardín Consati - Tel. (951) 515 7977 - (951) 515 2335
-                      %dt
-                        LA MEZCALOTECA
-                        %span
-                          Mezcales del pasado y futuro
-                      %dd
-                        Reforma 506, Centro - Tel. (951) 514 0082
-                      %dt
-                        EL OLIVO
-                        %span
-                          Pinchos, tapas, tragos y vinos
-                      %dd
-                        Murguía 218, Centro - Tel. (951) 514 6983
-                      %dt
-                        BAR/TERRAZA
-                        %span
-                          Parte Superior del Hotel azul
-                      %dd
-                        Abasolo 313, Centro - Tel. (951) 501 0016
-                  .modal-close-btn.m-t-xl.m-b-xl{:for => "restaurantes"}
+                    %h1.text-center.m-t-lg.c_pink Test
+                  .modal-close-btn.m-t-xl.m-b-xl{:for => "test"}
                     CERRAR
 
-      #slider1
-        %div= image_tag 'oaxaca/3.jpg'
-        /%div= image_tag 'oaxaca/5.jpg'
-      .box-content.bg-yellow
-        %h3 Dónde dormir
-        %ul
-          %li Pásale, pásele, mi casa es tu casa...
-          .m-t-md
-            .modal
-              %label{:for => "alojamiento"}
-                .modal-trigger
-                  %a.btn Guía de Hoteles
-              %input#alojamiento.modal-state{:type => "checkbox"}
-                .modal-fade-screen
-                  .modal-inner
-                    .modal-title.c_purple DÓNDE DORMIR
-                    .modal-close{:for => "alojamiento"}
-                    .hoteles.p-b-xl
-                      %h1.text-center.m-t-lg.c_pink.m-b-none HOTELES
-                      %h4.text-center.m-b-md "Reserva diciendo que vas a nuestra boda"
-                      %dl
-                        %dt
-                          QUINTA REAL
-                          %span
-                            =link_to 'www.caminoreal.com', 'http://www.caminoreal.com', target: '_blanc'
-                          %b.c_yellow
-                            ★★★★★
-                        %dd.m-t-sm
-                          35 Habitaciones<br>
-                          5 DE MAYO CENTRO - Tel: (951) 5-01-61-00, 01 y 02 / 01800 9-01-23-00<br>
-                          %a{href: 'mailto:mroman@quintareal.com'} mroman@quintareal.com
-                          y
-                          %a{href: 'mailto:fandres@quintareal.com'} fandres@quintareal.com
-                          <br>
-                          %strong
-                            Tarifa $2800 a $4800
-                      %dl
-                        %dt
-                          HOTEL MONTE CARMELO
-                          %span
-                            =link_to 'www.oaxaca-mio/hotelmontecarmelo.htm', 'http://www.oaxaca-mio/hotelmontecarmelo.htm', target: '_blanc'
-                          %b.c_yellow
-                            ★★★
-                        %dd.m-t-sm
-                          15 Habitaciones<br>
-                          García Vigil 705. Centro  (951)5-01-05-14 y 15<br>
-                          %a{href: 'mailto:paradormontecarmelo@hotmail.com'}paradormontecarmelo@hotmail.com<br>
-                          %strong
-                            Tarifa $980.00 - $1580.00 Impuestos incluídos.<br>
-                            Límite de reservación 18 de septiembre<br>
-                      %dl
-                        %dt
-                          HOLIDAY INN EXPRESS
-                          %span
-                            =link_to 'www.hiexpress.com', 'http://www.hiexpress.com', target: 'blanc'
-                          %b.c_yellow
-                            ★★★★
-                        %dd.m-t-sm
-                          10 Habitaciones<br>
-                          Díaz Quintas 115. Centro  01 (951) 51 2-92-00 y 01 800 00 999 00<br>
-                          %a{href: 'mailto:ventas3@hieoax.com.mx'}ventas3@hieoax.com.mx<br>
-                          %strong
-                            Tarifa $1963.50; $476.00 Persona extra Impuestos incluídos.<br>
-                            Límite de reservación 21 de octubre<br>
-                      %dl
-                        %dt
-                          DE LA PARRA
-                          %span
-                            =link_to 'www.hoteldelaparra.com', 'http://www.hoteldelaparra.com', target: 'blanc'
-                          %b.c_yellow
-                            ★★★★
-                        %dd.m-t-sm
-                          10 Habitaciones<br>
-                          Guerrero 117. Centro - 01 (951) 514-19-00 <br>
-                          %a{href: 'mailto:maribel@hoteldelaparra.com'}maribel@hoteldelaparra.com<br>
-                          %strong
-                            Tarifa $2275.00 - $2844.29 Impuestos incluídos.<br>
-                            Límite de reservación 16 de octubre<br>
-                      %dl
-                        %dt
-                          CASONA DE TITA
-                          %span
-                            =link_to 'www.lacasonadetita.com.mx', 'http://www.lacasonadetita.com.mx', target: 'blanc'
-                          %b.c_yellow
-                            BOUTIQUE
-                        %dd.m-t-sm
-                          6 Habitaciones<br>
-                          Gral. Manuel Garcia Vigil 805 01 951 516 1400<br>
-                          %a{href: 'mailto:reservaciones@lacasonadetita.com.mx'}reservaciones@lacasonadetita.com.mx<br>
-                          %strong
-                            Tarifa $3400.00 - $3950.00. Desayuno e impuestos incluídos.<br>
-                            Límite de reservación 16 de septiembre<br>
-                      %dl
-                        %dt
-                          OAXACALLI
-                          %span
-                            =link_to 'www.hoteloaxacalli.com', 'http://www.hoteloaxacalli.com', target: 'blanc'
-                          %b.c_yellow
-                            ★★★
-                        %dd.m-t-sm
-                          23 Habitaciones<br>
-                          Jesús Carranza 600. Centro - 01 (951) 501-01-53<br>
-                          %a{href: 'mailto:hoteloaxacalli@htomail.com'}hoteloaxacalli@htomail.com<br>
-                          %strong
-                            Tarifa $590.00 - $890.00. Impuestos incluídos.<br>
-                            Límite de reservación 1O de octubre<br>
-                      %dl
-                        %dt
-                          CASANTICA
-                          %span
-                            =link_to 'www.hotelcasantica.com', 'http://www.hotelcasantica.com', target: 'blanc'
-                          %b.c_yellow
-                            ★★★
-                        %dd.m-t-sm
-                          13 Habitaciones<br>
-                          Morelos 601, Centro - 01 (951) 5162673<br>
-                          %a{href: 'mailto:reservaciones@hotelcasantica.com'}reservaciones@hotelcasantica.com<br>
-                          %strong
-                      %dl
-                        %dt
-                          PARADOR SAN MIGUEL
-                          %span
-                            =link_to 'www.paradorsanmigueloaxaca.com', 'http://www.paradorsanmigueloaxaca.com', target: 'blanc'
-                          %b.c_yellow
-                            Boutique
-                        %dd.m-t-sm
-                          23 Habitaciones<br>
-                          Independencia 503, Centro 01 (951) 5149331<br>
-                          %a{href: 'mailto:sanmigueloaxaca@hotmail.com'}sanmigueloaxaca@hotmail.com<br>
-                          %strong
-                            Tarifa $2300.00 - $3200.00 Impuestos incluídos<br>
-                            Límite de reservación 18 de octubre<br>
-                      %dl
-                        %dt
-                          PARADOR SAN AGUSTIN
-                          %span
-                            =link_to 'www.paradorsanmigueloaxaca.com', 'http://www.paradorsanmigueloaxaca.com', target: 'blanc'
-                          %b.c_yellow
-                            ★★★
-                        %dd.m-t-sm
-                          16 Habitaciones<br>
-                          Armenta y López 215, Centro - 01 (951) 5162022  <br>
-                          %a{href: 'mailto:sanagus@prodigy.net.mx'}sanagus@prodigy.net.mx<br>
-                          %strong
-                            Tarifa $810.00 - $1300.00 Impuestos incluídos.<br>
-                            Límite de reservación 18 de octubre<br>
-                      %dl
-                        %dt
-                          CATRINA DE ALCALA
-                          %span
-                            =link_to 'www.casacatrina.com.mx', 'http://www.casacatrina.com.mx', target: 'blanc'
-                          %b.c_yellow
-                            Boutique
-                        %dd.m-t-sm
-                          10 Habitaciones<br>
-                          Macedonio Alcalá 102. Centro - (951)51 4-07-20<br>
-                          %a{href: 'mailto:orieta@casacatrina.com.mx'}rieta@casacatrina.com.mx<br>
-                          %strong
-                            Tarifa $1600.00 - $1800.00 $300 Persona extra. Incluye impuestos y desayuno continental.<br>
-                            Límite de reservación 18 de septiembre<br>
-                      %dl
-                        %dt
-                          CASA CATRINA
-                          %span
-                            =link_to 'www.casacatrina.com.mx', 'http://www.casacatrina.com.mx', target: 'blanc'
-                          %b.c_yellow
-                            Boutique
-                        %dd.m-t-sm
-                          6 Habitaciones<br>
-                          Garcia Vigil 703, Centro. (951) 51 4-53-22 y (951) 51 4-53-04<br>
-                          %a{href: 'mailto:orieta@casacatrina.com.mx'}rieta@casacatrina.com.mx<br>
-                          %strong
-                            Tarifa $1700.00 - $2200.00 Incluye impuestos y desayuno continental.<br>
-                            Límite de reservación 18 de septiembre<br>
-
-      #slider3
-        %div= image_tag 'oaxaca/2.jpg'
-        /%div= image_tag 'oaxaca/8.jpg'
-    .box
-      #slider2
-        %div= image_tag 'oaxaca/1.jpg'
-        /%div= image_tag 'oaxaca/7.jpg'
-      .box-content.bg-orange
-        %h3 Qué hacer
-        %ul
-          %li Oaxaca es la primera ciudad en ser incluida en la lista<br> del Patrimonio de la Humanidad de la UNESCO, en 1986.
-          .m-t-md
-            .modal
-              %label{:for => "actividades"}
-                .modal-trigger
-                  %a.btn Guía de actividades
-              %input#actividades.modal-state{:type => "checkbox"}
-                .modal-fade-screen
-                  .modal-inner
-                    .modal-title.c_purple QUÉ HACER
-                    .modal-close{:for => "actividades"}
-                    .paseos.p-b-xl
-                      %h1.text-center.m-t-lg.c_yellow LUGARES PARA VISITAR
-                      %dl
-                        %dt
-                          ANDADOR TURÍSTICO
-                        %dd
-                          Recorrido en la calle peatonal de Macedonio Alcalá desde la Iglesia de Santo Domingo hasta el Zócalo. <br>
-                          En el Bar Jardín ubicado en los Portales del Zócalo, se puede tomar una taza de café oaxaqueño.
-                        %dt
-                          CENTRO CULTURAL SANTO DOMINGO
-                        %dd
-                          Alberga al Museo de Arte Prehispánico y Etnográfico de Oaxaca y a la Biblioteca Francisco Burgoa. <br>
-                          Horario: 10:00 a 20:00 hrs. (cerrado los lunes) <br>
-                          ExConvento de Santo Domingo. Calle Macedonio Alcalá. Tel. (951) 516-2991
-                        %dt
-                          IGLESIA DE SANTO DOMINGO DE GUZMÁN
-                        %dd
-                          Horario: 7:00 a 13:00 hrs. y de 16:00 a 19:30 hrs.<br>
-                          Misas Dominicales: 7:00, 11:00, 13:00, 17:30 y 19:30 hrs.
-                        %dt
-                          JARDÍN ETNOBOTÁNICO
-                        %dd
-                          Horario: 9:00 a 20:00 hrs. (cerrado los lunes)<br>
-                          Visitas guiadas en español: diario a las 11:00 y 17:00 hrs.<br>
-                          ExConvento de Santo Domingo. Reforma esquina con Constitución
-                        %dt
-                          MUSEO DE ARTE CONTEMPORÁNEO DE OAXACA (MACO)
-                        %dd
-                          Horario: 10:30 a 20:00 hrs. (cerrado los martes)<br>
-                          Macedonio Alcalá  202, Centro Histórico. Tels. (951) 514-1055,  514-2228
-                        %dt
-                          INSTITUTO DE ARTES GRAFICAS DE OAXACA (IAGO)
-                        %dd
-                          Biblioteca y Sala de Exposiciones de Arte<br>
-                          Horario: 9:30 a 20:00 hrs. (Abierto toda la semana)<br>
-                          Macedonio Alcalá 507, Centro Histórico. Tels. (951) 516-6880,  516-2045
-                        %dt
-                          MUSEO DE LA FILATELIA (MUFI)
-                        %dd
-                          Horario: 9:00 a 19:30 hrs. (cerrado los lunes)<br>
-                          Reforma 509, Centro Histórico. Tels. (951) 516-8027,  514-2363
-                        %dt
-                          MUSEO DE ARTE PREHISPÁNICO RUFINO TAMAYO
-                        %dd
-                          Importante colección de arte prehispánico del artista<br>
-                          Horario: 10:00 a 14:00 hrs. y de 16:00 a 19:00 hrs. (cerrado los martes)<br>
-                          Morelos 503, Centro Histórico. Tel. (951) 516-4750
-                        %dt
-                          LA IGLESIA DE NUESTRA SEÑORA DE LA SOLEDAD
-                        %dd
-                          Patrona de Oaxaca. Se recomienda tomar nieve en los puestos colocados fuera del atrio de la Iglesia<br> y probar los típicos sabores de leche quemada con tuna, pétalos de rosa y mezcal.<br>
-                          Plaza de la Danza. Entre las Calles de Morelos e Independencia.<br>
-                          Misas Dominicales: 6:00, 7:00, 08:00, 11:00, 12:00, 13:00, 17:00, 18:00,19:00 y 20:00 hrs.
-                        %dt
-                          MUSEO TEXTIL DE OAXACA
-                        %dd
-                          Procesos creativos para la elaboración de textiles de Oaxaca<br>
-                          Horario: 10:00 a 20:00 hrs (Cerrado Lunes).<br>
-                          Hidalgo 917, Centro Histórico. Tel. (951) 501 11 04
-                        %dt
-                          MUSEO DE LOS PINTORES
-                        %dd
-                          Centro cultural, exposiciones, conciertos, lecturas, conferencias.<br>
-                          Horario: 10:00 a 20:00 hrs (Cerrado Lunes).<br>
-                          Independencia No. 607. Tel  (951) 516 5645
-                        %dt
-                          CASA DE LA CIUDAD
-                        %dd
-                          Se encontrara iinformación sobre el origen, desarrollo y conservación del centro histórico de Oaxaca.<br>
-                          Horario de visitas en salas: de lunes a domingo: 09:00 a 20:00<br>
-                          Porfirio Díaz 115, esq. Morelos.  Centro Histórico. Tel. (951) 5169648
-                        %dt
-                          MUSEO CASA DE JUAREZ
-                        %dd
-                          Horario de visitas: de Martes a domingo: 10:00 a 19:00 Hrs.<br>
-                          Manuel García Vigil (García Vigil) 609. Centro Historico.‎ Tel (951) 516 1860
-                    .arte.m-t-xl.p-b-xl
-                      %h1.text-center.m-t-xl.c_orange GALERIAS DE ARTE
-                      %dl
-                        %dt
-                          QUETZALLI
-                        %dd
-                          Constitución 104, Centro Histórico. - Tel. (951) 514-2606
-                        %dt
-                          ARTE OAXACA FUNDACION RODOLFO MORALES
-                        %dd
-                          Murguía 105, Centro Histórico. - Tel. (951) 514-0910
-                        %dt
-                          LA MANO MAGICA
-                        %dd
-                          Macedonio Alcalá 203. Centro Histórico. - Tel. (951) 516-4275
-                        %dt
-                          GALERÍA 910
-                        %dd
-                          Macedonio Alcalá 305. Centro Histórico - Tel. (951) 51 69862
-                    .artesanias.m-t-xl.p-b-xl
-                      %h1.text-center.m-t-xl.c_red TIENDAS DE ARTESANÍAS
-                      %dl
-                        %dt
-                          ARIPO
-                        %dd
-                          García Vigil 809, Centro Histórico. - Tel. (951) 514-4030
-                        %dt
-                          MARO
-                        %dd
-                          5 de Mayo 204, Centro Histórico. - Tel. (951) 516-0670
-                        %dt
-                          LOS BAULES DE JUANA CATA
-                        %dd
-                          Macedonio Alcalá 203-2, Centro Histórico. - Tel. (951) 501-0552
-                        %dt
-                          CASA DE LAS ARTESANIAS DE OAXACA
-                        %dd
-                          Matamoros 105, Centro Histórico. - Tel. (951) 516-5062
-                        %dt
-                          MERCADO DE ARTESANÍAS
-                        %dd
-                          J. P. García s/n esq. Zararagoza Centro. - Tel.  (951) 516 23 52
-                    .recorridos.m-t-xl.p-b-xl
-                      %h1.text-center-m-t-xl.c_burgundy RECORRIDOS TURÍSTICOS
-                      %p.tex-center
-                        Para visitar sitios de interés fuera de la Ciudad de Oaxaca, <br> se puede contactar a la Agencia de Viajes Turismo El Convento ubicada dentro del Hotel Camino Real.<br> La Agencia ofrecerá atención especial a los invitados a la boda.<br>
-                        Tels. (951) 51 6-57-91
-                      %dl
-                        %dt
-                          Monte Albán
-                          %span
-                            Zona Arqueológica de Monte Albán
-                        %dd
-                          10:00 – 14:30 / 15:00 – 17:30
-                        %dt
-                          Monte Albán
-                          %span
-                            Monte Albán, Ex Convento de Cuilapan, Atzompa (barro vidriado), Arrazola (alebrijes)
-                        %dd
-                          10:00 – 17:30
-                        %dt
-                          Mitla
-                          %span
-                            Zona Arqueológica de Mitla
-                        %dd
-                          10:00 – 14:30 / 15:00 – 17:30
-                        %dt
-                          Árbol del Tule
-                          %span
-                            Árbol del Tule, Iglesia de Tlacochahuaya (siglo XVI), Teotitlán del Valle (tapetes de lana), Yagul y Mitla
-                        %dd
-                          10:00 – 14:30
-                        %dt
-                          San Bartolo Coyotepec
-                          %span
-                            San Bartolo Coyotepec (barro negro), Ocotlán (mercado antiguo) San Martín Tilcajete (alebrijes)
-                        %dd
-                          Martes y Jueves / 10:00 – 14:30
-                        %dt
-                          Cuilapan y Zaachila
-                          %span
-                            Ex Convento de Cuilapan y Zaachila
-                        %dd
-                          Jueves / 10:00 – 14:30
-                        %dt
-                          San Bartolo Coyotepec
-                          %span
-                            San Bartolo Coyotepec (barro negro), Jalietza (textiles), Ocotlán (mercado antiguo)
-                        %dd
-                          Vernes / 10:00 – 14:30
-                        %dt
-                          Santa María Atzompa
-                          %span
-                            Santa María Atzompa (barro vidriado), Aráosla (alebrijes), San Bartolo Coyotepec (barro negro, Teotitlán del Valle (tapetes de lana)
-                        %dd
-                          10:00 – 14:30 / 15:00 – 17:30
-
-
-                    .modal-close-btn.m-t-xl.m-b-xl{:for => "actividades"}
-                      CERRAR
-      #slider4
-        %div= image_tag 'oaxaca/4.jpg'
-        /%div= image_tag 'oaxaca/6.jpg'
-      .box-content.bg-green
-        %h3 INFORMACIÓN ÚTIL
-        %ul
-          %li Salones de Belleza, Sitios de Taxis, Teléfonos útiles, Información.
-        .m-t-md
-          .modal
-            %label{:for => "info"}
-              .modal-trigger
-                %a.btn Guía de información útil
-            %input#info.modal-state{:type => "checkbox"}
-              .modal-fade-screen
-                .modal-inner
-                  .modal-title.c_purple INFORMACIÓN ÚTIL
-                  .modal-close{:for => "info"}
-                  .salones.p-b-xl
-                    %h1.text-center.m-t-lg.c_burgundy SALONES DE BELLEZA
-                    %p
-                      En caso de requerir los servicios de algún salón de belleza, <br> se proporciona a continuación los datos de tres salones ubicados a una cuadra del Hotel Camino Real<br> y otro en el centro de la Ciudad.<br>
-                      Los invitados a la boda recibirán trato preferencial.
-                    %dl
-                      %dt
-                        ESTETICA DOMINIQUE
-                        %span
-                          Ubicado a una cuadra de Camino Real
-                      %dd
-                        1a. Calle de Constitución 110 - Tel. (951) 501-1811 - Reservar con Amelia o Nancy
-                      %dt
-                        ESTETICA LONDRES
-                        %span
-                          En el centro de la Ciudad (a dos cuadras del Camino Real)
-                      %dd
-                        Av. Morelos 1001 esq. con Reforma - Reservar con Aldo o Efrén - Tel. (951) 516-0656
-                      %dt
-                        ESTUDIO DE BELLEZA LINDA
-                        %span
-                          Ubicado frente al Holiday Inn Express y a 3 cuadras del Misión de los Angeles
-                      %dd
-                        Díaz Quintas 102. Centro - Tel. (951) 51 5-91-38
-                  .taxis.m-t-xl.p-b-xl
-                    %h1.text-center.m-t-xl.c_red SITIOS DE TAXIS
-                    %dl
-                      %dt
-                        TRANSPORTE AEROPUERTO
-                      %dd
-                        Tels. (951) 514-4350,  511-5453
-                      %dt
-                        SITIO ALDAMA
-                      %dd
-                        Tels. (951) 515-1003,  516-1572
-                      %dt
-                        SITIO 5 DE FEBRERO
-                      %dd
-                        Tels. (951) 516-6575,  513-7496
-                      %dt
-                        SITIO ANTEQUERA
-                      %dd
-                        Tel. (951) 516-3611
-                      %dt
-                        SITIO ADO
-                      %dd
-                        Tels. (951) 515-1503, 516-1572
-                      %dt
-                        SITIO ALAMEDA
-                      %dd
-                        Tels. (951) 516-2685, 516-2190
-                  .aeropuerto.m-t-xl.p-b-xl
-                    %h1.text-center.m-t-xl.c_orange TELEFONOS AEROPUERTO
-                    %dl
-                      %dt
-                        MEXICANA DE AVIACION
-                      %dd
-                        Tels. (951) 511-5229,  511-5337
-                      %dt
-                        AEROMEXICO
-                      %dd
-                        Tels. (951) 511-5044,  511-5055
-                      %p
-                        Para hacer cambios en boletos de avión pueden contactar a la Agencia Turismo El Convento.<br>
-                        Tels. (951) 51 6-57-91
-
-                  .emergencia.m-t-xl.p-b-xl
-                    %h1.text-center-m-t-xl.c_yellow TELEFONOS DE EMERGENCIA
-                    %dl
-                      %dt
-                        EMERGENCIA
-                      %dd
-                        Tel. 066
-                      %dt
-                        INFORMACION TURISTICA
-                      %dd
-                        Tel. 040
-                      %dt
-                        CRUZ ROJA
-                      %dd
-                        Tel. 065, 51 6 44 55
-                      %dt
-                        POLICIA
-                      %dd
-                        Tel. (951) 51-6-0400
-                      %dt
-                        HOSPITAL REFORMA
-                      %dd
-                        Reforma  613 - Tel. (951) 516 0989, 516 6100
-                      %dt
-                        HOSPITAL DEL CARMEN
-                      %dd
-                        Abasolo 215, Centro - Tel. (951) 516 2612
-                      %dt
-                        HOSPITAL MOLINA
-                      %dd
-                        Garcia Vigil 317 Centro - Tel. (951) 516 3836, 516 5468
-                  .info.m-t-xl.p-b-xl
-                    %h1.text-center-m-t-xl.c_green INFORMACIÓN
-                    %dl
-                      %dt
-                        Marcela González Grijalva
-                        %span
-                          Coordinadora de la Boda
-                      %dd
-                        Cel. 044-951-547-3098
-                      %dt
-                        mgeventos@prodigy.net.mx
-                      %dd
-                        Tel. 01 (951) 517-87-37 / 515- 50-44 Of.
-                  .modal-close-btn.m-t-xl.m-b-xl{:for => "info"}
-                    CERRAR
-
-%section#contact.bg-light-gray
+%section#contact.bg-light-blue
   %h1 Contacto
   .m-t-xl.text-center
     %h4.m-t-xl
@@ -792,11 +71,11 @@ title: Oaxaca Boda
       01 (951) 5178737 / 044951473098
 
 
-%section#gift.bg-orange
+%section#gift.bg-pink
   %h1 El Regalo
   .m-t-xl.text-center
     %p Para nosotros el mayor regalo es que puedan acompañarnos en este día tan importante, especial y feliz en nuestras vidas.
-    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de miel de ensueño para celebrar nuestro enlace. 
+    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de miel de ensueño para celebrar nuestro enlace.
     %p Si estas leyendo esto es porque eres muy importante para nosotros, estamos muy emocionados de poder compartir este día contigo, nos vemos en Oaxaca.
   .m-t-xl.boxes
     .box.text-right
@@ -810,7 +89,7 @@ title: Oaxaca Boda
         Numero de cuenta: 0227275999<br>
         Clabe:072 580 00227275999 4
 
-%section#rsvp.bg-burgundy
+%section#rsvp.bg-blue
   .text-center
     %h1 RSVP
     %p Es muy importante para nosotros que nos ayudes a confirmar tu asistencia a todas las actividades.
