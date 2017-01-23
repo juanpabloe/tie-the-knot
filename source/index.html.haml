@@ -4,15 +4,14 @@ title: 'JP & Sarahi'
 
 %header#header.centered-navigation{role: "banner"}
   .centered-navigation-wrapper.scroll-on-page
-    %a.mobile-logo{href: "javascript:void(0)"}
-      %img{alt: "JP & Sarahi", src: "/assets/images/logo.svg"}
+    .mobile-logo
+      JP&Sarahi
     %a#js-centered-navigation-mobile-menu.centered-navigation-mobile-menu{href: "javascript:void(0)"} MENU
     %nav.scroll-on-page-top{role: "navigation"}
       %ul#js-centered-navigation-menu.centered-navigation-menu.show
         %li.nav-link.logo=link_to 'JP&S', '#slider', alt: 'JP & sarahi', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'Nosotros', '#slider', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'Detalles', '#wedding', class: 'scroll-on-page-link'
-        %li.nav-link= link_to 'Fecha', '#playa', class: 'scroll-on-page-link'
+        %li.nav-link= link_to 'Playa', '#playa', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'Mesa', '#gift', class: 'scroll-on-page-link'
         %li.nav-link= link_to 'RSVP', '#rsvp', class: 'scroll-on-page-link'
 
@@ -25,20 +24,23 @@ title: 'JP & Sarahi'
   %h2 30 de septiembre 2017 en Playa del Carmen, Quintana Roo.
   .grid-items-lines
     .grid-item
-      %h3 5:00 pm<br> Ceremonia religiosa
-      %p @ Playa frente a Azul Fives Hotel
+      %h3 Viernes 5:00 pm<br> Cocktail & Bienvenida
+      %p Pooldeck @ Azul Fives
     .grid-item
-      %h3 6:00 pm<br> Cocktail
-      %p Terraza Skybar @ Azul Fives Hotel
+      %h3 Sábado 5:00 pm<br> Ceremonia religiosa
+      %p @ Playa frente a Hotel
     .grid-item
-      %h3 8:00 pm<br> Recepción
-      %p Playa frente a Hotel
+      %h3 Sábado 6:00 pm<br> Cocktail
+      %p Terraza Skybar @ Azul Fives
+    .grid-item
+      %h3 Sábado 8:00 pm<br> Recepción
+      %p @ Playa frente a Hotel
     .right-cover
     .bottom-cover
 
 %section#playa.bg-blue
   .row
-    = image_tag 'playa/1.JPG'
+    = image_tag 'playa/1-low.jpg'
   .row
     %h1 Playa del Carmen
     .m-t-xl.text-center
@@ -48,7 +50,7 @@ title: 'JP & Sarahi'
       = link_to 'Mapa', "https://www.google.com.mx/maps/place/Azul+Fives+Hotel,+by+Karisma/@20.6648965,-87.0367812,17z/data=!3m1!4b1!4m5!3m4!1s0x866f952c148ab22f:0x190477a0dd66f25!8m2!3d20.6648915!4d-87.0345872?hl=en", target: '_blank', class: 'btn'
 
     .m-t-xl.text-center
-      %h2 Contacto
+      %h2 Contacto de nuestra organizadora
       %p
         Sarai Silva<br>
         Teléfono: +52 (81) 2046.4049<br>
@@ -64,4 +66,4 @@ title: 'JP & Sarahi'
     %p Estaría increíble nos puedas confirmar antes del 4 de Junio 2017.
     %p Cualquier duda que tengas no dudes en contactar a Sarai Silva para reservar!
     %button
-      =link_to 'Confirma aquí', '', target: '_blank'
+      = link_to 'Confirma aquí', "https://goo.gl/forms/pzXmJhp6zfsIPnMI2", target: '_blank'
