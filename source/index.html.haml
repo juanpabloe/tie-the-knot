@@ -36,63 +36,32 @@ title: 'JP & Sarahi'
     .right-cover
     .bottom-cover
 
-%section#playa.bg-light-blue
-  %h1 Playa del Carmen
-  %h2
+%section#playa.bg-blue
   .row
-    .box
-      .box-content.bg-blue
-        %h3 Hotel
-        %ul
-          %li Test
-          %li Test
+    = image_tag 'playa/1.JPG'
+  .row
+    %h1 Playa del Carmen
+    .m-t-xl.text-center
+      %h2 Hotel
+      %p
+        Azul Fives Hotel<br>
+      = link_to 'Mapa', "https://www.google.com.mx/maps/place/Azul+Fives+Hotel,+by+Karisma/@20.6648965,-87.0367812,17z/data=!3m1!4b1!4m5!3m4!1s0x866f952c148ab22f:0x190477a0dd66f25!8m2!3d20.6648915!4d-87.0345872?hl=en", target: '_blank', class: 'btn'
 
-        .m-t-md
-          .modal
-            %label{:for => "test"}
-              .modal-trigger
-                %a.btn Test modal
-            %input#restaurantes.modal-state{:type => "checkbox"}
-              .modal-fade-screen
-                .modal-inner
-                  .modal-title.c_blue Test modal title
-                  .modal-close{:for => "test"}
-                  .restaurantes.p-b-xl
-                    %h1.text-center.m-t-lg.c_pink Test
-                  .modal-close-btn.m-t-xl.m-b-xl{:for => "test"}
-                    CERRAR
+    .m-t-xl.text-center
+      %h2 Contacto
+      %p
+        Sarai Silva<br>
+        Teléfono: +52 (81) 2046.4049<br>
 
-%section#contact.bg-light-blue
-  %h1 Contacto
+%section#gift
+  %h1 Mesa de regalos
   .m-t-xl.text-center
-    %h4.m-t-xl
-      Marcela González Grijalva<br>
-      Teléfono oficina: 01 (951) 5175044<br>
-      01 (951) 5178737 / 044951473098
-
-
-%section#gift.bg-pink
-  %h1 El Regalo
-  .m-t-xl.text-center
-    %p Para nosotros el mayor regalo es que puedan acompañarnos en este día tan importante, especial y feliz en nuestras vidas.
-    %p Sin embargo, si nos quieren hacer un regalo para nuestra boda, lo mejor para nosotros sería tener una luna de miel de ensueño para celebrar nuestro enlace.
-    %p Si estas leyendo esto es porque eres muy importante para nosotros, estamos muy emocionados de poder compartir este día contigo, nos vemos en Oaxaca.
-  .m-t-xl.boxes
-    .box.text-right
-      .small
-        Banco: HSBC<br>
-        Numero de cuenta: 6405577887<br>
-        Clabe: 021580064055778877
-    .box.text-left
-      .small
-        Banco: Banorte<br>
-        Numero de cuenta: 0227275999<br>
-        Clabe:072 580 00227275999 4
+    %p Aún no hemos dado de alta mesas de regalo, pero pronto aquí mismo podrás encontrarlas.
 
 %section#rsvp.bg-blue
   .text-center
     %h1 RSVP
-    %p Es muy importante para nosotros que nos ayudes a confirmar tu asistencia a todas las actividades.
-    %p Por favor, responde a este cuestionario:
+    %p Estaría increíble nos puedas confirmar antes del 4 de Junio 2017.
+    %p Cualquier duda que tengas no dudes en contactar a Sarai Silva para reservar!
     %button
-      =link_to 'Responder ahora', 'https://docs.google.com/forms/d/1eTQ13Y7eDcZMcVmLA1_d4VPnl1weBwQ7kRlKzKP6c0g/viewform?edit_requested=true', target: '_blanc'
+      =link_to 'Confirma aquí', '', target: '_blank'
