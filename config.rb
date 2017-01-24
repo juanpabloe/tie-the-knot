@@ -12,6 +12,8 @@ page '/*.xml', layout: false
 page '/*.json', layout: false
 page '/*.txt', layout: false
 
+config[:host] = "https://jpysarahi.com"
+
 configure :development do
   activate :livereload
 end
